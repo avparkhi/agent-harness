@@ -1,0 +1,4 @@
+{
+  "difficulty": "medium",
+  "task": "`merge([(5, 7), (1, 6)])` returns `[[5, 7], [1, 6]]`. Overlapping intervals should be merged into `[[1, 7]]` whatever order they come in."
+}

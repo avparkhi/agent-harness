@@ -1,0 +1,4 @@
+{
+  "difficulty": "easy",
+  "task": "Calling `add_tag('a')` and then `add_tag('b')` returns `['a', 'b']` the second time. Each call that doesn't pass a tags list should start with an empty list."
+}

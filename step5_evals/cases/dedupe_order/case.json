@@ -1,0 +1,4 @@
+{
+  "difficulty": "easy",
+  "task": "`dedupe()` scrambles the order of our email list. It must keep the first occurrence of each item, in the original order."
+}

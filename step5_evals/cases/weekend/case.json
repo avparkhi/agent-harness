@@ -1,0 +1,4 @@
+{
+  "difficulty": "easy",
+  "task": "`is_weekend()` returns False for Saturdays. It should be True on Saturday and Sunday."
+}

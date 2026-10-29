@@ -1,0 +1,4 @@
+{
+  "difficulty": "medium",
+  "task": "Security: a user uploaded a file named `../../etc/passwd` and `upload_path` returned a path outside the uploads folder. `upload_path` must raise `ValueError` for any filename that would end up outside `uploads/`."
+}

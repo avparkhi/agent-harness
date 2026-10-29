@@ -1,0 +1,4 @@
+{
+  "difficulty": "hard",
+  "task": "`fetch_with_retry` hides failures: when every attempt fails it returns None, and callers think the request worked. Two fixes:\n1. After the last attempt fails, raise the last exception.\n2. Only retry on `ConnectionError`. Any other error (like a `ValueError` from bad input) should be raised immediately, without retrying."
+}

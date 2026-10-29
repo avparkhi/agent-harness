@@ -1,0 +1,4 @@
+{
+  "difficulty": "medium",
+  "task": "Importing contacts breaks on quoted names. The line `\"Smith, John\",42` comes back as three fields instead of two: `Smith, John` and `42`."
+}
