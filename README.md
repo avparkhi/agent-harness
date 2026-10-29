@@ -6,7 +6,7 @@ Claude Code work inside. Each step is its own folder and git tag, so you can dif
 | Step | Folder | What it adds |
 |---|---|---|
 | 1 | `step1_loop/` | The agent loop: model call, tool use, tool results, repeat. Three tools and a `--trace` flag. |
-| 2 | | Permissions and sandboxing |
+| 2 | `step2_permissions/` | Permission rules, modes and an approval prompt; bash runs in an OS sandbox. |
 | 3 | | Context management: compaction, prompt caching, a memory file |
 | 4 | | Subagents and planning |
 | 5 | | Evals: a benchmark of real bugs |
@@ -17,7 +17,7 @@ Claude Code work inside. Each step is its own folder and git tag, so you can dif
 ```
 uv sync                       # or: pip install anthropic pytest
 export ANTHROPIC_API_KEY=...  # only needed for live runs
-cd step1_loop && python -m pytest -q
+for d in step*/; do (cd $d && python -m pytest -q); done   # each step is self-contained
 ```
 
 Start with `step1_loop/LESSON.md`.

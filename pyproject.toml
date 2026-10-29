@@ -7,6 +7,3 @@ dependencies = ["anthropic>=2.3"]
 
 [dependency-groups]
 dev = ["pytest>=8"]
-
-[tool.pytest.ini_options]
-testpaths = ["step1_loop"]
