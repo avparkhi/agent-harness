@@ -1,0 +1,12 @@
+[project]
+name = "harness"
+version = "0.1.0"
+description = "A coding agent harness built from scratch, step by step"
+requires-python = ">=3.11"
+dependencies = ["anthropic>=2.3"]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["step1_loop"]
