@@ -5,5 +5,8 @@ description = "A coding agent harness built from scratch, step by step"
 requires-python = ">=3.11"
 dependencies = ["anthropic>=2.3"]
 
+[project.optional-dependencies]
+remote = ["daytona>=0.230"]   # step 6 --remote
+
 [dependency-groups]
 dev = ["pytest>=8"]

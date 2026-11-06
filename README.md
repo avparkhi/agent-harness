@@ -10,13 +10,15 @@ Claude Code work inside. Each step is its own folder, so you can diff one agains
 | 3 | `step3_context/` | A HARNESS.md memory file, prompt caching with a cost meter, and compaction. |
 | 4 | `step4_subagents/` | A todo list the model plans with, and subagents with their own context, run in parallel. |
 | 5 | `step5_evals/` | An eval: 8 bugs with hidden tests, a runner with trials and cost, and comparisons that separate signal from noise. |
-| 6 | | A Duet-style coordinator, threads, tasks and routines |
+| 6 | `step6_remote_durable/` | Durable sessions that survive a crash and resume, and tools that run in a remote Daytona sandbox. |
+| 7 | | A Duet-style coordinator, threads, tasks and routines |
 
 ## Setup
 
 ```
 uv sync                       # or: pip install anthropic pytest
 export ANTHROPIC_API_KEY=...  # only needed for live runs
+pip install daytona            # step 6 --remote only; export DAYTONA_API_KEY=...
 for d in step*/; do (cd $d && python -m pytest -q); done   # each step is self-contained
 ```
 
